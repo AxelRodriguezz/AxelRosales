@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuadro Comparativo</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+<table>
+    <tr>
+        <th>Estados</th>
+        
+        <th>Similitudes</th>
+        <th>Diferencias</th>
+    </tr>
+    <tr>
+        <td>Staged</td>
+        <td>- Todos los archivos en esta etapa están listos para ser confirmados en el próximo commit.<br>- Se utiliza el comando <code>git add</code> para mover los archivos del directorio de trabajo al área de preparación.</td>
+        <td>- Los archivos en esta etapa no han sido aún incluidos en el historial del repositorio mediante un commit.<br>- Son archivos que se han modificado y se han marcado para ser incluidos en el próximo snapshot del proyecto.</td>
+    </tr>
+    <tr>
+        <td>Checkout</td>
+        <td>- Permite navegar entre diferentes ramas o versiones del proyecto.<br>- Puede utilizarse para crear una nueva rama basada en la actual.</td>
+        <td>- Este comando no está directamente relacionado con la preparación de archivos para el commit.<br>- Se enfoca en cambiar entre diferentes estados del proyecto, como ramas o commits específicos.</td>
+    </tr>
+    <tr>
+        <td>Committed</td>
+        <td>- Los archivos en esta etapa forman parte del historial del repositorio y están disponibles para ser recuperados en cualquier momento.<br>- Los cambios en estos archivos han sido registrados de forma permanente en el repositorio.</td>
+        <td>- A diferencia de los archivos en la etapa "staged", los archivos en esta etapa han sido confirmados y forman parte del historial del proyecto.<br>- Estos archivos representan un estado estable del proyecto en comparación con los archivos en etapas anteriores como "added" o "staged".</td>
+    </tr>
+    <tr>
+        <td>Added</td>
+        <td>- Los archivos en esta etapa se encuentran en el directorio de trabajo y aún no han sido preparados para el commit.<br>- Son archivos recién creados o copiados al directorio de trabajo.</td>
+        <td>- Estos archivos aún no han sido incluidos en el historial del repositorio mediante un commit.<br>- Necesitan ser marcados para ser incluidos en el próximo snapshot del proyecto utilizando el comando <code>git add</code>.</td>
+    </tr>
+</table>
+
+</body>
+</html>
